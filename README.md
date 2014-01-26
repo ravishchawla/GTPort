@@ -1,23 +1,25 @@
 GTPort
 ======
 
-An SQL project that involves a database application in Java and implements the MySQL Database System
+A Database Application, written in Java, that uses the MySQL Database System. 
 
-Application Developed by Ravish Chawla
+Objectives 
+----------
+ - To practice writing queries and transactions in SQL
+ - To practice implementing a server-based Database and connect it using a JDBC connector. 
+ - To practice making a Graphical Application using the Java Swing Graphical User Interface
+ - To practice Object Orientated Concepts, such as inheritence and polymorphism
+ 
 
-This project consists of multiple subpanels built contained in a frame. Each panel has different operations that are executed when the panel is loaded.
+About the Project
+-----------------
+The project was part of a Course Assignment for CS 4400, Database Systems. The goal of the project was to create a MYSQL Database, so that data could be exported from and imported into the database using a network connector. As a interface for the user, a Graphical application was created, that allowed the user to go through different frames and find the information needed. 
 
-The Jar File 'cs4400_Group32_GTPORT_v1.6.jar' can be executed to view the application. A valid connection to the Online Database is required, however. 
+Because of the extent of the project, inheritence was used to simplify programming. However, a different class was needed for each frame. Most of the frames extend a bsic class design, called GuiDesign.java. GuiDesign.java contains the basic layout that is used for each frame. 
 
-Representative code of the project: GTPort.java, Connector.java, and FacultyReport.java
+The important functionality of the project is contained in the classes GTPort.java and Connector.java. GTPort.java manages all the panels, and Connector.java connects to the database. Other classes, such as FacultyReport.java aggregate information from the database using SQL Queries and Transactions to inflate the information on a panel. 
 
-The structure of this program is as follows:
+The executable file is 'cs4400_Group32_GTPORT_v1.6.jar'. However, because the database is no longer held in Georgia Tech's servers, the application will not run properly. 
 
-Classes: 
-AddCourse, AdminHomepage, AdminReport, CourseSelection, FacultyHomepage, FacultyPersonalInformation, FacultyReport, FacultyServices, GradeAssignment, Homepage, Login, Registration, RegistrationComplete, RegistrationView, SelectDepartment, StudentHomepage, StudentPersonalInformation, StuentReport, StudentServices, TutorAssignment, TutorLogbook, and TutorSearch extend the class: 
-GuiDesign.java
-
-Class Connector connects to the MySQL database by using the JDBC connector
-
-Class GTPort manages the entire program. It builds the connection, and instantiates/sets different pages in a cardlayout on the main frame. It also calls specific functions based on which panel is currently on top. 
+Application developed by Ravish Chawla.
 
